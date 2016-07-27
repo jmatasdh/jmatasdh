@@ -5,9 +5,8 @@ var tips = [
 '"aojsfoagonaogno"',
 '"qieng0qje"'
 ];
-console.log(Math.floor((Math.random() * tips.length)));
 var tip = $('.general-tip');
-tip.html(tips[0]);
+tip.html(tips[Math.floor((Math.random() * tips.length))]);
 
 var gmail = $('#gmail').on('click', function() {
 	$('.gmail-tip').toggle();
