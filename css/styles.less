@@ -1,0 +1,87 @@
+@grey: #726F6F;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: @grey;
+}
+
+.background {
+    position: absolute;
+    background: url('../img/background.png') center;
+    background-size: inherit;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.profile {
+	display: block;
+	position: absolute;
+	width: 50%;
+    margin-left: 25%;
+    top: 25%;
+
+	.profile-photo {
+		display: inline-block;
+		position: relative;
+		height: 9vw;
+		width: 9vw;
+		background: url('../img/profile.jpg') center no-repeat;
+	    background-size: cover;
+		border-radius: 50%;
+		border-style: solid;
+		border-color: @grey;
+    	border-width: 2px;
+	}
+	.profile-text {
+		display: inline-block;
+		position: relative;
+		margin-left: 10%;
+		transform: translateY(-20%);
+	}
+	.profile-name {
+		display: block;
+		font-size: 4rem;
+	}
+	.profile-subtitle {
+		display: block;
+		font-size: 3rem;
+	}
+
+}
+
+.external-profile {
+	display: block;
+	position: absolute;
+	transform: translateX(50%);
+	height: 3vw;
+	bottom: 5vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	    
+	.profile-icon {
+		display: inline-block;
+		position: relative;
+		width: 3vw;
+		height: 100%;
+		margin-left: 1vw;
+	}
+
+	#github {
+			background: url('../img/github.png') center;
+    		background-size: cover;
+		}
+
+	#linkedin {
+		background: url('../img/linkedin.png') center;
+    	background-size: cover;
+	}
+
+	#gmail {
+		background: url('../img/gmail.png') center;
+    	background-size: cover;
+	}
+
+}
