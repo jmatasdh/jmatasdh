@@ -1,4 +1,5 @@
 @grey: #726F6F;
+@black: #000;
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -19,7 +20,7 @@ body {
 .profile {
 	display: block;
 	position: absolute;
-	width: 80%;
+	width: 60%;
 	top: 20%;
 	margin-left: 50%;
 	transform: translateX(-50%);
@@ -39,7 +40,7 @@ body {
 	.profile-text {
 		display: inline-block;
 		position: relative;
-		text-align: center;
+		float: right;
 	}
 	.profile-name {
 		display: block;
@@ -55,7 +56,6 @@ body {
 .external-profile {
 	display: block;
 	position: absolute;
-	transform: translateX(50%);
 	height: 3vw;
 	bottom: 5vw;
 	margin-left: 50%;
@@ -66,22 +66,44 @@ body {
 		position: relative;
 		width: 3vw;
 		height: 100%;
-		margin-left: 1vw;
+		margin-left: 0.5vw;
+		margin-right: 0.5vw;
+		cursor: pointer;
 	}
 
 	#github {
-			background: url('../img/github.png') center;
-    		background-size: cover;
+			background: url('../img/github.png') center no-repeat;
+    		background-size: contain;
 		}
 
 	#linkedin {
-		background: url('../img/linkedin.png') center;
-    	background-size: cover;
+		background: url('../img/linkedin.png') center no-repeat;
+    	background-size: contain;
 	}
 
 	#gmail {
-		background: url('../img/gmail.png') center;
+		background: url('../img/gmail.png') center no-repeat;
     	background-size: cover;
 	}
 
+}
+
+.gmail-tip {
+	display: none;
+	position: absolute;
+	width: 100%;
+	bottom: 2vw;
+	font-size: 1vw;
+	color: @grey;
+	text-align: center;
+}
+
+.general-tip {
+	display: inline;
+	position: absolute;
+	width: 100%;
+	bottom: 10vw;
+	font-size: 1.2vw;
+	color: @black;
+	text-align: center;
 }
